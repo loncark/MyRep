@@ -52,7 +52,7 @@ void tabla::ispisi()
                         for(int k=0; k<3; ++k)
                             {
                                 cout<<" ";
-                                if(polje[i/4][k] && i%4==2) cout<<polje[i/4][k];
+                                if(polje[i/4][k] && i%4==2) {if(polje[i/4][k]==1) cout<<'X'; else cout<<'O';}
                                  else cout<<" ";
                                 cout<<" |";
                             }
@@ -99,25 +99,26 @@ bool tabla::ponovo()
 void tabla::input()  //unosi se dvoznamenkasti broj, prva znamenka je red, druga stupac
 {
     if(znak==1) cout<<"X turn: "; else cout<<"O turn: ";
-    cin>>unos;
+    cin>>unos; unos-=11;
     while (1)
         {
-            if(unos/10<1 || unos/10>3 || unos%10<1 || unos%10>3 || unos/100>=1)
+            if(unos/10<0 || unos/10>2 || unos%10<0 || unos%10>2 || unos/100>=1)
                 {
                     cout<<endl<<"Faulty input. Two-digit number required "<<endl<<"with digits between 1 and 3. Repeat input: ";
-                    cin>>unos;
+                    cin>>unos; unos-=11;
                     continue;
                 }
             if(polje[unos/10][unos%10]!=0)
                 {
                     cout<<endl<<"Field taken. Choose an empty field: ";
-                    cin>>unos;
+                    cin>>unos; unos-=11;
                     continue;
                 }
             break;
         }
-    if(znak==1) polje[unos/10-1][unos%10-1]=1;
-     else polje[unos/10-1][unos%10-1]=2;
+    if(znak==1) polje[unos/10][unos%10]=1;
+     else polje[unos/10][unos%10]=2;
+    znak=!znak;
 
     return;
 }
@@ -128,7 +129,8 @@ int main()
     tabla t;
     do  {
             t.reset();
-            while(t.gameover()==false) t.input();
+            while(t.gameover()==false) {t.ispisi(); t. input();}
+            t.ispisi();
 
         } while(t.ponovo()==1);
 
