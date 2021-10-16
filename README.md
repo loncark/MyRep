@@ -5,3 +5,5 @@
 2. "konverzija" file is a mini-program designed to transform a text from a textual file using a specific function, it was made for my friend's art project.
 
 3. "tictactoe" is a tic-tac-toe game simulation in command prompt (without rendering).
+
+Everything else is college-related (SFML Tetris and Bouncy balls, vector implementation and a HTML code generator).
