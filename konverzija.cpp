@@ -2,6 +2,8 @@
 #include<fstream>
 #include<cctype>
 #include<array>
+#include<WIndows.h>
+#include<random>
 using namespace std;
 
 int fibonacci(char c)
@@ -16,6 +18,24 @@ int fibonacci(char c)
             sum=fib[i]+fib[i-1];
         }
     return fib[c-'a'];
+}
+
+void ispisi(string linija)
+{
+    static default_random_engine generator;
+    static uniform_int_distribution<int> distribution(100,500);
+    static int random;
+
+    string::iterator s;
+    for(s=linija.begin(); s!=linija.end(); ++s)
+        {
+            random = distribution(generator);
+            Sleep(random);
+            if(isalpha(*s)) cout<<to_string(fibonacci(*s));
+             else cout<<*s;
+        }
+    cout<<'\n';
+    return;
 }
 
 int main ()
@@ -42,7 +62,21 @@ int main ()
         output.close();
     }
 
-  else cout << "Jedan od fajlova se ne da otvorit";
+   else cout << "Jedan od fajlova se ne da otvorit";
+
+  input.open("izlaz.txt");
+  if (input.is_open())
+    {
+        while(getline(input,linija))
+            {
+                ispisi(linija);
+            }
+
+        input.close();
+        output.close();
+    }
+
+   else cout << "Izlaz.txt se ne da otvorit";
 
   return 0;
 }
