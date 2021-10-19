@@ -4,6 +4,7 @@
 #include<array>
 #include<WIndows.h>
 #include<random>
+#include<chrono>
 using namespace std;
 
 int dignum(int a)
@@ -16,6 +17,7 @@ int dignum(int a)
 
 int randomdigit(int broj)
 {
+    if(dignum(broj)==1) return broj;
     static default_random_engine generator;
     static uniform_int_distribution<int> distribution(1,dignum(broj));
     int dig=distribution(generator)-1;
@@ -64,7 +66,9 @@ int main ()
   string::iterator s;
   ifstream input;
   ofstream output;
-  default_random_engine generator;
+
+  unsigned seed=chrono::system_clock::now().time_since_epoch().count();
+  default_random_engine generator(seed);
   bernoulli_distribution Bdistribution(0.3);
 
   input.open("file.txt");
