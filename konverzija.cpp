@@ -6,6 +6,26 @@
 #include<random>
 using namespace std;
 
+int dignum(int a)
+{
+    if(a==0) return 1;
+    int dig=0;
+    while(a!=0) {a/=10; ++dig;}
+    return dig;
+}
+
+int randomdigit(int broj)
+{
+    static default_random_engine generator;
+    static uniform_int_distribution<int> distribution(1,dignum(broj));
+    int dig=distribution(generator)-1;
+
+    while(dig) {broj/=10; --dig;}
+    dig=broj%10;
+
+    return dig;
+}
+
 int fibonacci(char c)
 {
     c=tolower(c);
@@ -31,8 +51,7 @@ void ispisi(string linija)
         {
             random=distribution(generator);
             Sleep(random);
-            if(isalpha(*s)) cout<<to_string(fibonacci(*s));
-             else cout<<*s;
+            cout<<*s;
         }
     cout<<'\n';
     return;
@@ -46,7 +65,7 @@ int main ()
   ifstream input;
   ofstream output;
   default_random_engine generator;
-  bernoulli_distribution Bdistribution(0.7);
+  bernoulli_distribution Bdistribution(0.3);
 
   input.open("file.txt");
   output.open("izlaz.txt");
@@ -57,14 +76,14 @@ int main ()
             {
                 for(s=linija.begin(); s!=linija.end(); ++s)
                     {
-                        if(*s==' ' && Bdistribution(generator))     //ne izlazi iz for petlje
+                        if(*s==' ' && Bdistribution(generator))
                             {
                                 do {output<<*s; ++s;} while(*s!=' ' && s!=linija.end());
                                 if(*s==' ') {--s; continue;}
                                 if (s==linija.end()) break;
                             }
 
-                        if(isalpha(*s)) output<<to_string(fibonacci(*s));
+                        if(isalpha(*s)) output<<to_string(randomdigit(fibonacci(*s)));
                          else output<<*s;
                     }
                 output<<'\n';
