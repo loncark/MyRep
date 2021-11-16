@@ -1,0 +1,102 @@
+KAKO RIJESIT SLJEDECI ERROR:
+error LNK2019: unresolved external symbol SDL_main referenced in function main_getcmdline
+OVAKO: #include <SDL.h>
+#undef main
+
+NAMJESTAVANJE SDL-A
+1. Otvori novi projekt i stvori source.cpp u koji kopiraj kod na dnu ovog txt-a
+2. x86 pretvori u x64 gore na toolbaru
+3. Skini na SDL2 stranici Visuall C++ release, extractaj ga negdje i zapamti di je taj extractani folder (nek se zove SDL2)
+4. Project -> ProjectName properties
+Pod C/C++ -> general-> Additional Include Directories -> padajuci izbornik -> edit -> newline -> odaberi folder SDL2/include -> Apply!
+Pod Linker -> general: Additional library directories -> padajuci izbornik -> edit -> newline -> odaberi folder SDL2/lib/x64 -> Apply!
+Pod Linker -> input -> Additional dependencies -> padajuci izbornik -> U box ukucaj: SDL2.lib (enter) SDL2main.lib -> Apply!
+5. SDL2.dll kopiraj u onaj folder projekta u kojem se nalazi executable (Application).
+6. Pokreni kod. Trebala bi se otvorit dva prozora.
+
+#include "SDL.h"
+#undef main
+#include <iostream>
+
+
+//don't do this, this is just an example
+SDL_Renderer* renderer;
+SDL_Window* window;
+bool isRunning;
+bool fullscreen;
+void handleEvents();
+void update();
+void render();
+
+
+//please don't put all your code in main like I did.
+int main() {
+
+	fullscreen = false;
+	int flags = 0;
+	flags = SDL_WINDOW_RESIZABLE;
+	if (fullscreen) {
+		flags = flags | SDL_WINDOW_FULLSCREEN;
+	}
+	if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
+		std::cout << "Subsystems Initialized!\n";
+
+		window = SDL_CreateWindow("Test Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 500, flags);
+		if (window) {
+			std::cout << "Window Created!\n";
+			SDL_SetWindowMinimumSize(window, 100, 100);
+		}
+		renderer = SDL_CreateRenderer(window, -1, 0);
+		if (renderer) {
+			SDL_SetRenderDrawColor(renderer, 121, 121, 121, 255);
+			std::cout << "Renderer created!\n";
+			SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+			isRunning = true;
+		}
+
+	}
+
+	while (isRunning) {
+		handleEvents();
+		update();
+		render();
+	}
+
+	//frees memory associated with renderer and window
+	SDL_DestroyRenderer(renderer);
+	SDL_DestroyWindow(window);	//error here
+	SDL_Quit();
+
+
+	return 0;
+}
+
+//handles any events that SDL noticed.
+void handleEvents() {
+	//the only event we'll check is the  SDL_QUIT event.
+	SDL_Event event;
+	SDL_PollEvent(&event);
+
+
+	switch (event.type) {
+	case SDL_QUIT:
+		isRunning = false;
+		break;
+	default:
+		break;
+	}
+}
+
+//simple render function
+void render() {
+	SDL_SetRenderDrawColor(renderer, 121, 121, 121, 255);
+	SDL_RenderClear(renderer);
+
+	//your stuff to render would typically go here.
+	SDL_RenderPresent(renderer);
+}
+
+//simple update function
+void update() {
+	//if things could update the code would go in here.
+}
