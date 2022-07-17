@@ -1,0 +1,2 @@
+C:\Users\USER\source\repos\sdltut\x64\Debug\breakout.exe
+C:\Users\USER\source\repos\breakout\x64\Debug\breakout.exe

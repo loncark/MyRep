@@ -1,0 +1,14 @@
+Bilješke iz RPPZW-a za buduæu mene:
+Sve pripreme su funkcionalne ako su paketi i baze podataka dobro uštimani.
+
+1. Lab1 je osnova html-a i css-a.
+2. Lab2 je primjer korištenja templatea u htmlu pomoæu javascripta. Neæe se pokrenuti u browseru jer u order.js-u u liniji 17 nije više dostupan JSON file koji sadrži podatke o kategorijama i proizvodima.
+3. Lab1 i Lab2 su client-side aplikacije pa se otvaraju samo otvaranjem html datoteke u browseru.
+
+4. Lab3 i Lab4 su server-side aplikacije. U njima se koristi npm (Node Package Manager) pa treba [Open Folder] Lab3 u VSCode-u, otvoriti terminal te izvršiti [npm install]. Tada æe se iz package.json-a instalirati sve potrebne ekstenzije u folder node_modules. Prije ponovnog uploadanja izbrisati taj folder!
+5. Lab3 i Lab4 koriste postgresql za spremanje podataka pa treba imati instaliran postgresql i pgadmin4. U datotekama index.js i seed.js upisani su podaci pomoæu kojih aplikacija pristupa bazi podataka pa ih treba izmijeniti ukoliko se baza promijeni. Funkcija query() u index.js obavlja upite u bazu. Da se ne unose svi podaci u bazu ruèno, dovoljno je stvoriti tablicu korektnog imena u pgadmin-u i u teminalu izvršiti [node run seed] (iste upute pišu u pripremi za lab3).
+6. Lab3 je takoðer prvi primjer korištenja express i ejs paketa. ejs omoguæava ispreplitanje html i javascript koda dok je express paket koji stvara i održava server aplikaciju. Aplikacija funkcionira na temelju MVC (Model-View-Controller) obrasca: server.js zahtjeve prosljeðuje adekvatnom router.js-u koji dobavlja/obraðuje zahtjev i podatke te iscrtava adekvatni view (ejs datoteku). 
+7. Aplikacija se pokreæe sa [node server.js] u terminalu i ukucavanjem [localhost:3000] u adresnu traku. 
+8. Lab4 uvodi express-session i connect-pg-simple pakete kako bi aplikacija mogla uslužiti više korisnika odjednom i obilježena je time da se u [request] ubacuje objekt [session] gdje su spremljeni podaci korisnika. 
+9. Ne znam èemu služi .idea folder i .yml datoteka ali u njoj isto ima podataka vezanih za bazu podataka pa ju izmijeni prema potrebi. Ne pitaj što piše u _select.ejs-u jer ne znam. Lab4 takoðer sadrži i express-validator paket (za validaciju podataka unešenih POST metodom) ali nisam s njime radila.
+10. Lab4 je imao problema s bazom podataka pa zato baza nije standardni postgres kao u Lab3 nego USER; aplikacija nije znala postgresqlu pristupiti pod drugim imenom. Ta se greška na labosu na faksu manifestirala u tome što se kartice u browseru nisu htjele uèitati. Rješenje (koje nije stvaranje i popunjavanje nove baze imena USER) je nepoznato, a ni stvaranje nove baze nije moguæe ukoliko ne znaš lozinku za pgadmin (tu je 'password').

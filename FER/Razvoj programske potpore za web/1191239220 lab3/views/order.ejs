@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+
+<%- include(`partials/head`); %>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+    
+    <!-- Vanjska petlja vrti po bazi categories, unutarnja po bazi inventory. 
+         categories i inventory su nizovi objekata.
+         {id, name, description, seasonal} je objekt u categories 
+         {id, name, price, categoryid, imageurl, colors} je objekt u inventory   -->
+
+    <% for (let category of categories) { 
+        let empty = 1; %>
+    <section class="section 
+        <% if(category.id%2==1) {%> secondary-color-bg <%}
+             else {%> primary-color-bg <%}%>">
+        <div class="centered-container">
+            <h1 class="decorated-title font-secondary main-color">
+                <span class="main-color-emphasized">
+                    <%= category.name %> </span> Inventory
+            </h1>
+            <div class="separator"></div>
+        </div>
+        <div class="gallery">
+            
+            <% for (let item of inventory) { 
+                if(item.categoryid != category.id) continue; 
+                empty = 0; %>
+                <div class="photo-box" data-id="<%=category.id%>">
+                    <img class="photo-box-image" src=<%= item.imageurl %>></img>
+                    <div class="photo-box-title font-secondary main-color-emphasized">
+                        <a class="link" href="../item/<%=item.id%>"> <%= item.name %> </a>
+                    </div>
+                </div>
+            <% } %>
+        <% if(empty) { %>
+                <h1 class="decorated-title font-secondary main-color "> 
+                    No items in this category </h1>
+        <% } %>
+        </div>
+    </section>
+
+    <% } %>
+
+    <!-- POMOĆNI KOD
+        <div class="photo-box" data-id="1">
+            <img class="photo-box-image" src="https://i.imgur.com/Ttir6mp.jpg"></img>
+            <div class="photo-box-title font-secondary main-color-emphasized">
+                <a class="link" href="../item/1">Tulip</a>
+            </div>
+        </div>
+                    
+        <div class="photo-box" data-id="1">
+            <img class="photo-box-image" src="https://i.imgur.com/gH33WyT.jpg"></img>
+            <div class="photo-box-title font-secondary main-color-emphasized">
+                <a class="link" href="../item/2">Lavender</a>
+            </div>
+        </div> 
+    -->
+
+</main>
+
+<%- include(`partials/footer`); %>
+
+</body>
+
+</html>
