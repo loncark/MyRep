@@ -2,7 +2,7 @@
 
 1. The "mreza" is a program based on my need to calculate the optimal way to fit a grid defined by a number of rows and columns into a piece of paper of certain dimensions. The grid is put over a picture inside a drawing/text editing program, the rows and columns are numerated and the same grid with the calculated dimensions and margins can be recreated on paper. That way you can reproduce the picture on the screen by yourself just by drawing part by part.
 
-2. "konverzija" file is a mini-program designed to transform a text (a book specifically) from a textual file using a specific function, it was made for my friend's art project.
+2. "konverzija" file is a mini-program designed to transform a text (a book specifically) from a textual file using a specific function. It was made for my friend's art project: we wanted to capture the process of people always misunderstanding each other (because words are tools insufficient for a description of feelings). So we took a set of information (Proust's novel) in a .txt file and converted around 70% of words into random numbers - just enough for you can see the outline of a story and yet understand nothing. The resulting output of the program was eventually recorded and presented in an exhibition; I haven't preserved the textual files unfortunately.
 
 3. "tictactoe" is a tic-tac-toe game simulation in command prompt (without rendering). I just wanted to see how long it will take me to code it; not long indeed.
 
