@@ -7,5 +7,3 @@
 3. "tictactoe" is a tic-tac-toe game simulation in command prompt (without rendering). I just wanted to see how long it will take me to code it; not long indeed.
 
 4. I was given two weeks to make the Breakout game for a student job interview - ended up with a functional game in 8 days. (YAY!) Taking into account I have never made a game from scratch, I am super-satisfied, even though it wasn't nowhere near satisfactory for the employers due to the lack of sophistication. I learned a lot about the SDL library from all sorts of sources, mostly Youtube, C++ reference sites and StackOverflow, but I haven't improved the game since.
-
-Everything else is college-related (SFML Tetris, Bouncy balls, vector implementation and a HTML code generator) - mostly homework for my object-oriented programming course.
