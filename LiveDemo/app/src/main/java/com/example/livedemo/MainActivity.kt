@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navDeepLink
 import com.example.livedemo.ui.theme.LiveDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,23 +27,22 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun TheApp() {
-    val navController = rememberNavController()
-    NavHost(navController, startDestination = "Screen1") {
+    @Composable
+    fun TheApp() {
+        val navController = rememberNavController()
+        NavHost(navController, startDestination = "Screen1") {
 
-        composable(route = "Screen1") {
-            Screen1 { navController.navigate("Screen2") }
+            composable(route = "Screen1") {
+                Screen1 { navController.navigate("Screen2") }
+            }
+
+            composable(route = "Screen2",
+                       deepLinks = listOf(navDeepLink {
+                           uriPattern = "www.livedemo.com/Screen2"
+                       })
+            ) { Screen2() }
         }
-
-        composable(route = "Screen2") { Screen2() }
     }
-}
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    LiveDemoTheme {
-        Screen1()
-    }
-}
+//terminal command:
+// $ adb shell am start -W -a android.intent.action.VIEW -d "https://www.livedemo.com/Screen2"
