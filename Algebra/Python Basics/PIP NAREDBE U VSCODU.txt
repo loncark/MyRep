@@ -1,0 +1,9 @@
+In terminal on vscode, check and make sure python is installed:
+
+py -3 --version
+
+Then you can install libraries with:
+
+py -m pip install packagename
+
+Run files with py filename.py
