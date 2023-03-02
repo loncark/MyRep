@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1059374083887",
+    "firebase_url": "https://composeapp-47d09-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "composeapp-47d09",
+    "storage_bucket": "composeapp-47d09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059374083887:android:6935192edb91dcacf07bda",
+        "android_client_info": {
+          "package_name": "com.loncar.composeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059374083887-gd47jk99tche5nmcpfh47er331iplf5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loncar.composeapp",
+            "certificate_hash": "30f3af10356895b007d33162312f22b4368ed261"
+          }
+        },
+        {
+          "client_id": "1059374083887-ar4ohk5omiaom810ocij3hjt3srpog3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0xtUfvC_9eZ7lGZJgjv2MTh3vLIWrH6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059374083887-ar4ohk5omiaom810ocij3hjt3srpog3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
