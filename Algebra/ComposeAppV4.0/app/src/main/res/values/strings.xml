@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ComposeApp</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="person">Person</string>
+    <string name="authentication">Authentication</string>
+    <string name="email_address">E-mail address</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+    <string name="unable_to_login">Unable to log in</string>
+    <string name="unable_to_register">Unable to register</string>
+    <string name="upload">Upload</string>
+    <string name="search">Search</string>
+    <string name="description">Description</string>
+    <string name="hashtags">Hashtags</string>
+    <string name="uploading_picture">Uploading picture...</string>
+    <string name="downloading_picture">Downloading picture...</string>
+    <string name="handle">Handle</string>
+    <string name="repetitive_handle">Handle or E-mail already taken</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="noConnection">Not connected to Internet.</string>
+    <string name="register_successful">Firebase update successful.</string>
+    <string name="download">Download</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="delete_successful">Delete successful.</string>
+    <string name="deleting">Deleting...</string>
+    <string name="upload_successful">Upload successful.</string>
+    <string name="update_successful">Update successful.</string>
+    <string name="no_picture_selected">Select a picture.</string>
+</resources>
