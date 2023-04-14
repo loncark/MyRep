@@ -38,7 +38,7 @@ class PicturesViewModelTest {
     @Test
     fun stateWithContentIsProduced() = scope.runTest {
         val testVM = getViewModel()
-        advanceUntilIdle()
+        advanceUntilIdle()  //try  waitForIdle()
         val state = testVM.picturesState.value
 
         assert(state == PicturesState(dummyPictures, false))
