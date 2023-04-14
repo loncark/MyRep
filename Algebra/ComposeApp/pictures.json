@@ -1,0 +1,299 @@
+{
+  "picture1": {
+    "id": "1",
+    "handle": "blue",
+    "description": "I had a lovely day today, yall. Hopefully tomorrow is as good.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fblue%2Fblue1.jpg?alt=media&token=daf99baa-4d7a-4d79-b965-35fec2ef5b4c",
+    "lat": "40.758105",
+    "lng": "-73.702477",
+    "hashtags": "pretty,bright"
+  },
+  "picture2": {
+    "id": "2",
+    "handle": "blue",
+    "description": "Once upon a time there was a description unlike this one. Do better.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fblue%2Fblue2.jpg?alt=media&token=42236c82-d174-4542-9a09-146dab7c34fb",
+    "lat": "33.810406",
+    "lng": "-84.447684",
+    "hashtags": ""
+  },
+  "picture3": {
+    "id": "3",
+    "handle": "blue",
+    "description": "Descriptions are hard to come up with.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fblue%2Fblue3.jpg?alt=media&token=f101b19b-3392-4999-96c8-87bec71ba198",
+    "lat": "47.592572",
+    "lng": "-122.335207",
+    "hashtags": "happy,nature,beautiful,bright,wild,flower,spring,pretty"
+  },
+  "picture4": {
+    "id": "4",
+    "handle": "blue",
+    "description": "How does anyone in this world have time to make up descriptions? Annoying.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fblue%2Fblue4.jpg?alt=media&token=c0e95d6c-a164-4779-b99f-f280824209e4",
+    "lat": "41.789882",
+    "lng": "-87.718564",
+    "hashtags": "color,spring,beautiful,wonder,bright,happy,nature,nice"
+  },
+  "picture5": {
+    "id": "5",
+    "handle": "blue",
+    "description": "Three word description.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fblue%2Fblue5.jpg?alt=media&token=e8be01ac-d5ee-4253-ac58-e12a35b94c5a",
+    "lat": "32.965647",
+    "lng": "-96.793393",
+    "hashtags": "flower,bright,wild,nature,wonder,pretty"
+  },
+  "picture6": {
+    "id": "6",
+    "handle": "blue",
+    "description": "Sometimes the best description is the one you don't think a lot about.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fblue%2Fblue6.jpg?alt=media&token=85fb631c-e9f5-42ee-b7b9-38de4f1ffa1d",
+    "lat": "40.615809",
+    "lng": "-73.984574",
+    "hashtags": "beautiful"
+  },
+  "picture7": {
+    "id": "7",
+    "handle": "green",
+    "description": "Do me a favor and don't read this description, it's bad.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fgreen%2Fgreen1.jpg?alt=media&token=88ffcd8f-0840-4c22-88c9-2a2c6c88d7dd",
+    "lat": "32.886111",
+    "lng": "-96.735715",
+    "hashtags": "happy,wonder,pretty,spring"
+  },
+  "picture8": {
+    "id": "8",
+    "handle": "green",
+    "description": "I wanted to write a description that wouldn't make eyes roll but here we are.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fgreen%2Fgreen2.jpg?alt=media&token=d6de137d-2ed4-4229-b3a4-5eae082a32ac",
+    "lat": "41.966681",
+    "lng": "-87.643727",
+    "hashtags": "nice,flower,beautiful,wonder,nature,pretty"
+  },
+  "picture9": {
+    "id": "9",
+    "handle": "green",
+    "description": "Legend says that in a week I will still be writing descriptions for dummyPictures list.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fgreen%2Fgreen3.jpg?alt=media&token=89c9711c-a07d-4b00-b0f0-f7eb706dace2",
+    "lat": "38.536948",
+    "lng": "-121.440176",
+    "hashtags": "color,spring,nice,pretty,happy,flower,bright"
+  },
+  "picture10": {
+    "id": "10",
+    "handle": "green",
+    "description": "I am only halfway there, this seems like an eternity.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fgreen%2Fgreen4.jpg?alt=media&token=8687605e-0320-40e0-ac03-dd0d4392dbd1",
+    "lat": "47.592572",
+    "lng": "-122.335207",
+    "hashtags": "pretty"
+  },
+  "picture11": {
+    "id": "11",
+    "handle": "green",
+    "description": "Do yourself a favor and autogenerate some random sentences next time.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fgreen%2Fgreen5.jpg?alt=media&token=782f58a9-711b-4bd3-acca-58e36eda367b",
+    "lat": "40.761593",
+    "lng": "-73.25261",
+    "hashtags": "nice,color,nature,spring,pretty,happy,wild"
+  },
+  "picture12": {
+    "id": "12",
+    "handle": "orange",
+    "description": "Random sentences generator gave me rather dumb examples.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Forange%2Forange1.jpg?alt=media&token=2c2c9084-86ad-4cfe-b147-214325f5a055",
+    "lat": "33.719074",
+    "lng": "-84.389319",
+    "hashtags": "wonder,spring,nature,happy,pretty,beautiful,nice,wild,flower,color"
+  },
+  "picture13": {
+    "id": "13",
+    "handle": "orange",
+    "description": "Another short one.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Forange%2Forange2.webp?alt=media&token=ca75ca3e-f884-4452-bcb0-657ebe687c69",
+    "lat": "32.788033",
+    "lng": "-96.856565",
+    "hashtags": "nice,flower,nature,color,wonder"
+  },
+  "picture14": {
+    "id": "14",
+    "handle": "orange",
+    "description": "Do other people have issues like this? Suppose so, perhaps I am too much of a Negative Nelly.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Forange%2Forange3.jpg?alt=media&token=6e89cead-0816-433c-a140-d63ea5d3296a",
+    "lat": "38.594931",
+    "lng": "-121.486181",
+    "hashtags": "nature,happy"
+  },
+  "picture15": {
+    "id": "15",
+    "handle": "orange",
+    "description": "This is the 26th description to a dummy picture I have written.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Forange%2Forange4.jpg?alt=media&token=4e772f6e-1d03-4a8c-8f47-cdac20e15835",
+    "lat": "40.90602",
+    "lng": "-72.991684",
+    "hashtags": "flower,nature,pretty,bright,beautiful,wild,nice,happy"
+  },
+  "picture16": {
+    "id": "16",
+    "handle": "orange",
+    "description": "I truly hope these pictures and descriptions will render correctly.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Forange%2Forange5.jpg?alt=media&token=01afc2af-87cb-4b65-ab3a-4239a6020c87",
+    "lat": "38.510626",
+    "lng": "-121.52532",
+    "hashtags": "pretty"
+  },
+  "picture17": {
+    "id": "17",
+    "handle": "pink",
+    "description": "Place your bets on how long it will take me to finish this app. I bet I am going to lose my senses before it happens.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpink%2Fpink1.jpeg?alt=media&token=b989b066-5fb3-454d-bf30-2efda7eb9dd2",
+    "lat": "41.659204",
+    "lng": "-87.602745",
+    "hashtags": "wonder,bright"
+  },
+  "picture18": {
+    "id": "18",
+    "handle": "pink",
+    "description": "Not the last one.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpink%2Fpink2.jpg?alt=media&token=bd2ea747-38d9-47cc-aa7e-0d327bc6c691",
+    "lat": "40.945449",
+    "lng": "-73.785447",
+    "hashtags": "wild,pretty,spring,wonder,flower,happy"
+  },
+  "picture19": {
+    "id": "19",
+    "handle": "pink",
+    "description": "Descriptions are hard to come up with.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpink%2Fpink4.jpg?alt=media&token=bc799d7c-6c54-433c-8561-1fe156d5a16f",
+    "lat": "47.682331",
+    "lng": "-122.294008",
+    "hashtags": "color,pretty,wonder,spring,nature,flower"
+  },
+  "picture20": {
+    "id": "20",
+    "handle": "pink",
+    "description": "How does anyone in this world have time to make up descriptions? Annoying.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpink%2Fpink3.webp?alt=media&token=16427050-6b1c-4f16-9997-aebb027dd36f",
+    "lat": "41.764791",
+    "lng": "-87.579518",
+    "hashtags": "pretty,wild,flower,happy,beautiful,nature"
+  },
+  "picture21": {
+    "id": "21",
+    "handle": "pink",
+    "description": "Three word description.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpink%2Fpink5.jpg?alt=media&token=b1a1f039-f1be-4d22-afca-328bdd57f767",
+    "lat": "33.761898",
+    "lng": "-84.340567",
+    "hashtags": "spring,nature,wild,beautiful,pretty,flower,wonder,nice,bright,happy"
+  },
+  "picture22": {
+    "id": "22",
+    "handle": "purple",
+    "description": "Sometimes the best description is the one you don't think a lot about.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpurple%2Fpurple1.jpg?alt=media&token=53494659-f9f7-4166-a09c-a1f0e78e882a",
+    "lat": "40.533404",
+    "lng": "-74.153489",
+    "hashtags": "spring,wonder,beautiful"
+  },
+  "picture23": {
+    "id": "23",
+    "handle": "purple",
+    "description": "Do me a favor and don't read this description, it's bad.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpurple%2Fpurple2.jpg?alt=media&token=6a9d9ea5-8538-4ebb-a92b-a94f1e261055",
+    "lat": "41.855119",
+    "lng": "-87.732813",
+    "hashtags": "flower,beautiful"
+  },
+  "picture24": {
+    "id": "24",
+    "handle": "purple",
+    "description": "I wanted to write a description that wouldn't make eyes roll but here we are.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpurple%2Fpurple3.jpg?alt=media&token=a75bedde-e9d7-4080-a6d1-8058a75be0a1",
+    "lat": "32.800731",
+    "lng": "-96.505002",
+    "hashtags": "beautiful,pretty,nature"
+  },
+  "picture25": {
+    "id": "25",
+    "handle": "purple",
+    "description": "Legend says that in a week I will still be writing descriptions for dummyPictures list.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fpurple%2Fpurple4.jpeg?alt=media&token=46661c21-2e06-48b3-9669-c2dfc4a9ef33",
+    "lat": "47.618498",
+    "lng": "-122.296068",
+    "hashtags": "nice,wild,beautiful,pretty"
+  },
+  "picture26": {
+    "id": "26",
+    "handle": "red",
+    "description": "I am only halfway there, this seems like an eternity.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred1.jpg?alt=media&token=776ada3b-f2a5-4f60-b196-2eecbd260b64",
+    "lat": "33.741916",
+    "lng": "-84.486136",
+    "hashtags": "pretty,spring,happy,beautiful,color,bright,nature"
+  },
+  "picture27": {
+    "id": "27",
+    "handle": "red",
+    "description": "Do yourself a favor and autogenerate some random sentences next time.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred2.jpg?alt=media&token=343b6997-e1f5-44c3-9a15-13a9ae4ed6de",
+    "lat": "38.479456",
+    "lng": "-121.435369",
+    "hashtags": "wonder,spring,flower,happy,nice,beautiful,color"
+  },
+  "picture28": {
+    "id": "28",
+    "handle": "red",
+    "description": "Random sentences generator gave me rather dumb examples.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred3.jpg?alt=media&token=5c209084-f094-4a46-aba0-4012e0f1bb9b",
+    "lat": "32.707181",
+    "lng": "-96.709623",
+    "hashtags": "wonder,flower,pretty"
+  },
+  "picture29": {
+    "id": "29",
+    "handle": "red",
+    "description": "Another short one.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred4.jpg?alt=media&token=8dbaa8ce-b5bf-4a08-9483-a4614ec1b5c5",
+    "lat": "38.573998",
+    "lng": "-121.424383",
+    "hashtags": "spring,happy,color,nice,bright,beautiful,nature,flower,wonder"
+  },
+  "picture30": {
+    "id": "30",
+    "handle": "red",
+    "description": "Do other people have issues like this? Suppose so, perhaps I am too much of a Negative Nelly.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred5.jpg?alt=media&token=9d1fe14c-46c0-41e2-b219-b336eb36fd6f",
+    "lat": "38.655013",
+    "lng": "-121.436743",
+    "hashtags": "wild,color"
+  },
+  "picture31": {
+    "id": "31",
+    "handle": "red",
+    "description": "This is the 26th description to a dummy picture I have written.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred6.jpg?alt=media&token=b2899ff5-b8b3-4f50-a68a-01aa2be5a02a",
+    "lat": "47.686953",
+    "lng": "-122.357866",
+    "hashtags": "spring,flower,pretty,beautiful,wonder"
+  },
+  "picture32": {
+    "id": "32",
+    "handle": "red",
+    "description": "I truly hope these pictures and descriptions will render correctly.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred7.webp?alt=media&token=3c1331df-6275-4f9f-9e44-549e3b3f9baa",
+    "lat": "33.771031",
+    "lng": "-84.421591",
+    "hashtags": "color,flower,beautiful"
+  },
+  "picture33": {
+    "id": "33",
+    "handle": "red",
+    "description": "Place your bets on how long it will take me to finish this app. I bet I am going to lose my senses before it happens.",
+    "resource": "https://firebasestorage.googleapis.com/v0/b/composeapp-47d09.appspot.com/o/pictures%2Fred%2Fred8.jpg?alt=media&token=af78ef93-1ac0-4978-80b3-51b4af69fe9e",
+    "lat": "32.694469",
+    "lng": "-96.952695",
+    "hashtags": "beautiful,nature,flower"
+  }
+}

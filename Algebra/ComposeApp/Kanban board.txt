@@ -1,0 +1,91 @@
+-- ComposeApp --
+Starting position: Each Home Screen picture navigates to the same dummy PictureScreen. 
+
+DONE:
+- BottomNavScreen navigation to HomeScreen, DiscoverScreen, UserScreen
+- build authentication screen
+- configure authentication process  
+(- make the app fetch and display stuff from Firebase:)
+- copy/create adequately: data class -> api -> repository + state -> viewmodel for Persons and Pictures
+- consult Bele: every view has only one viewmodel -> UserVM and PicsVM
+- User/PicsViewModel -> init -> change attributes in copy()
+- UserScreen needs to sift through all the pictures and display the right ones
+- change UserState to differentiate between the logged user and other users
+- instantiate UserViewModel where needed 
+- make the UserScreen fetch the person from authState: make handle whatever is before @ in email, change later!
+- PROBLEM DIAGNOSIS: passing user data via authViewModel is not doable
+- SOLUTION: change UserViewModel back to PersonsViewModel (will be needed later) and introduce a global UserInfo singleton
+- make picturesState differentiate between currentUserPictures and otherPictures
+- create the UserInfo singleton and its module
+- provide UserScreen with UserInfo data, add a text display in case currentUser==null
+- pass to HomeScreen currentUser info and change appearances accordingly
+- ChatGPT told me I wrote the singleton wrong, REDO IT
+- create the singletonComponent and call it where neccessary
+- pass the handle from authState to UserInfo, configure UserInfo initialization
+- fixed crash launch: removed, launched, put back @AndroidEntryPoint in MainActivity
+- fixing Firebase relative image paths instead of absolute
+- downloadUrl() DOES NOT TRIGGER DOWNLOAD, just displays the image
+- reimport json to storage by changing the key to picture{id}
+- figure out how to use ChatGpt code for generating absolute image paths
+- apply the transformation to each image after fetching
+- had a call with Klasic and figured out it would be way easier and more maintainable to have screens recreate multiple viewmodels contrary to MVVM 
+- delete failed attempts at UserInfo singleton -> created UserState & UserViewModel 
+- rewrite all states and viewmodels to have dependency injection and updateState()
+
+V1.0 done! Description: After login, user handle is the first part of the email. HomeScreen shows pics that are not user's and UserScreen shows those that are.
+
+- link pictureScreen to HomeScreen and UserScreen
+- enable PictureScreen -> UserScreen -> PictureScreen
+- add scrolls to PictureScreen
+- fix the appearance and two theme look
+- add latlng to each picture
+- implement geocoder getCity() function
+- build map view: for each city display images taken in it
+- configure PictureScreen -> MapScreen -> PictureScreen
+- pass right arguments to MapScreen
+- when I go to Maps SDK -> Enable -> Manage, it asks me for a billing method
+- Klasic corrects my wrong inputs in gradle files
+
+V2.0 done! Now pictures can be opened, user handles tapped to display the user and his images. Location buttons diplay a map which marks all pictures in the tapped city focused on the image that was previously shown. Two themed look can be switched on/off in the main activity.
+
+- read the project instructions: DiscoverScreen is not needed -> refactor!
+- construct the search bar
+- filter by #hashtags, @author, ~location 
+- add hashtags to pictures
+- configure picture download original
+- create UploadScreen
+- configure picture upload:
+- figure out how to launch gallery, pick an image and upload it to storage
+- retrieve downloadUrl and create new picture
+- update the pictures.json
+- reload PictureViewModel
+- fix which screens appear if the user is anonymous
+- add handle to registration, update the persons database json
+- fix: UserScreen wouldn't display newly uploaded images -> changed parameters from List<Picture> to pictureState (thx Pacadi!)
+- refactor to remove UserViewModel completely, let personsVM store currentUserHandle
+- pass the user from authState to personsState in RootNavGraph
+- add anonymous button
+- add log out button
+- fix: onLogOut callbacks crash the app -> pass rootController to Main and navigate to AUTH from it (thx Klasic!)
+- fix: random email login crashes the app -> enable proper authentication
+
+V3.0 done! Added features: Home screen can search through pictures based on authorship, tags or location. A logged in user can upload pictures from gallery on Upload part and download them to internal app storage by tapping once on them when they are displayed in full. New users can register themselves with a unique email and handle, but don't have control over their profile picture or bio. Additionally, Anonymous button allows access to just the Home screen and a logged in user can log out with the appropriate button on Profile part. 
+
+- configure local database
+- handle noConnection exceptions
+- rewrite picturesSetup.py because toAbsPath() blocks the app
+- small pics do not get clipped and I'm too lazy to change them
+- added cicrular progress indicator to HomeScreen
+- write tests for UserScreen and PictureViewModel
+- implement delete
+- refactor the null checks added during delete implementation
+- implement update
+- saket swipe crashes if you swipe too far and I have zero idea how to fix it
+- fix the unique id upload
+- fix noConnection toast appearances: they will actually never occur because the upload is just queued until the internet is turned back on
+- templateMethod loggers of logins, logouts, uploads, updates and deletes
+- add grayscale and sepia upload filters
+
+V4.0 done! Added features: The app can roll in anonymous mode when there is no internet (otherwise it is needed for authentication). The user can upload images with grayscale and sepia filters, update his own images by swiping right on user screen or delete them by swiping left. 
+
+All in all: Overall works well. Minor problems: login button is sometimes unresponsive, one viewmodel test fails, some UI elements do not render as pretty as desired.
